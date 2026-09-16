@@ -4,6 +4,12 @@ A configuration-driven Jenkins Shared Library for coordinating deployments acros
 
 It provides one pipeline entry point to build selected services, publish images, promote images, update Helm values, synchronize Argo CD applications, run health and image-tag checks, and optionally apply application-configuration patches.
 
+<p align="center">
+  <img src="docs/assets/deployment-orchestrator-overview.png" alt="Jenkins Deployment Orchestrator workflow: service selection, build, container image publishing, Helm update, Argo CD synchronization, and Kubernetes or on-premise deployment." width="100%">
+</p>
+
+<p align="center"><em>From service selection to Kubernetes or on-premise deployment.</em></p>
+
 > This is a public, sanitized reference implementation. Every hostname, repository URL, job name, credential ID, application name and SSH target under `resources/deployment/` is an intentionally non-routable example.
 
 ## Features
