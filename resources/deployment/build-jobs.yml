@@ -1,0 +1,23 @@
+# Jenkins credential IDs are references to credentials stored in Jenkins, never secrets.
+buildTypes:
+  common:
+    jenkinsDns: jenkins.example.invalid
+    credentialId: example-jenkins-credential
+    commonMs:
+      job: example/common-build
+    commonMsWithoutUnitTest:
+      job: example/common-build-without-tests
+  on-prem:
+    jenkinsDns: jenkins.example.invalid
+    credentialId: example-jenkins-credential
+    SERVICE_API:
+      job: example/api-build
+  kubernetes:
+    jenkinsDns: jenkins.example.invalid
+    credentialId: example-jenkins-credential
+    SERVICE_API:
+      job: example/api-image-build
+      platform: linux/amd64
+    SERVICE_WEB:
+      job: example/web-image-build
+      platform: linux/amd64

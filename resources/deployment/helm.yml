@@ -1,0 +1,15 @@
+repositories:
+  example-helm:
+    repo: https://git.example.invalid/platform/helm-charts.git
+    credentialId: example-git-credential
+environments:
+  staging:
+    repository: example-helm
+    branch: main
+    services:
+      SERVICE_API:
+        chartPath: charts/api
+        valuesFile: values.yaml
+      SERVICE_WEB:
+        chartPath: charts/web
+        valuesFile: values.yaml

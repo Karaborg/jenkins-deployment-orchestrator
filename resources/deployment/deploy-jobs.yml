@@ -1,0 +1,6 @@
+environments:
+  development:
+    jenkinsDns: jenkins.example.invalid
+    credentialId: example-jenkins-credential
+    SERVICE_API: example/api-deploy-development
+    SERVICE_WEB: example/web-deploy-development

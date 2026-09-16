@@ -1,0 +1,12 @@
+# Service names, images and deployment aliases are fully configuration-driven.
+# `configurationTarget` is optional and enables CONFIG_PATCH for a backend service.
+services:
+  SERVICE_API:
+    displayName: API service
+    imageName: example-api
+    type: backend
+    configurationTarget: api
+  SERVICE_WEB:
+    displayName: Web application
+    imageName: example-web
+    type: frontend

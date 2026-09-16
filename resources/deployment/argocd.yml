@@ -1,0 +1,12 @@
+credentials:
+  example-argocd:
+    server: argocd.example.invalid
+    credentialId: example-argocd-credential
+environments:
+  staging:
+    credential: example-argocd
+    services:
+      SERVICE_API:
+        application: example-api-staging
+      SERVICE_WEB:
+        application: example-web-staging

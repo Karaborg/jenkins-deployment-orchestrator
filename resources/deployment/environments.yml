@@ -1,0 +1,18 @@
+# Example only. Replace every value with your own environment definition.
+environments:
+  development:
+    type: on-prem
+    dns: app.development.example.invalid
+    buildType: on-prem
+    imagePush: false
+    imageProvision: false
+    ecrPromotion: false
+    implemented: false
+  staging:
+    type: kubernetes
+    dns: app.staging.example.invalid
+    buildType: kubernetes
+    imagePush: true
+    imageProvision: true
+    ecrPromotion: false
+    implemented: false

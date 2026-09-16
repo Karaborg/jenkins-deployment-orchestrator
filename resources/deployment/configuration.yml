@@ -1,0 +1,22 @@
+onPrem:
+  repository:
+    repo: https://git.example.invalid/platform/application-configuration.git
+    credentialId: example-git-credential
+    branch: main
+  remotePath: /opt/application/config
+  scriptsPath: /opt/application/bin
+  port: 22
+  environments:
+    development:
+      path: development
+      host: host.example.invalid
+      user: deploy
+  services:
+    api:
+      file: api.properties
+      processPattern: api-service
+      startScript: start-api.sh
+  common:
+    file: common.properties
+cloud:
+  applicationPropertiesKey: applicationProperties

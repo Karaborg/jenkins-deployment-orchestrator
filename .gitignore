@@ -1,0 +1,5 @@
+.idea/
+*.iml
+
+# Keep organization-specific deployment configuration out of public branches.
+resources/deployment/*.local.yml

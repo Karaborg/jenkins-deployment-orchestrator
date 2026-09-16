@@ -1,0 +1,7 @@
+environments:
+  kubernetes:
+    job: example/image-push
+    jenkinsDns: jenkins.example.invalid
+    credentialId: example-jenkins-credential
+    parameters:
+      environment: staging
